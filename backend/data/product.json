@@ -1,0 +1,65 @@
+[
+  {
+    "sku": "DET-001",
+    "name": "Regular Detergent",
+    "category": "Laundry",
+    "plastic_grams": 80,
+    "co2_kg": 1.2,
+    "sustainable": false,
+    "swap_sku": "DET-001-ECO",
+    "price": 60,
+    "image_url": "http://127.0.0.1:8000/static/detergent.jpg"
+  },
+  {
+    "sku": "DET-001-ECO",
+    "name": "Refill Detergent Pack",
+    "category": "Laundry",
+    "plastic_grams": 10,
+    "co2_kg": 0.4,
+    "sustainable": true,
+    "price": 45,
+    "image_url": "http://127.0.0.1:8000/static/refill_pack.jpg"
+  },
+  {
+    "sku": "TB-001",
+    "name": "Plastic Toothbrush",
+    "category": "Personal Care",
+    "plastic_grams": 20,
+    "co2_kg": 0.8,
+    "sustainable": false,
+    "swap_sku": "TB-001-ECO",
+    "price": 30,
+    "image_url": "http://127.0.0.1:8000/static/plastic_toothbrush.jpg"
+  },
+  {
+    "sku": "TB-001-ECO",
+    "name": "Bamboo Toothbrush",
+    "category": "Personal Care",
+    "plastic_grams": 2,
+    "co2_kg": 0.2,
+    "sustainable": true,
+    "price": 40,
+    "image_url": "http://127.0.0.1:8000/static/bamboo_toothbrush.jpg"
+  },
+  {
+    "sku": "P001",
+    "name": "Plastic Bottle",
+    "category": "Beverages",
+    "plastic_grams": 20,
+    "co2_kg": 0.5,
+    "sustainable": false,
+    "swap_sku": "P002",
+    "price": 20,
+    "image_url": "http://127.0.0.1:8000/static/bottles.jpg"
+  },
+  {
+    "sku": "P002",
+    "name": "Steel Bottle",
+    "category": "Beverages",
+    "plastic_grams": 2,
+    "co2_kg": 0.1,
+    "sustainable": true,
+    "price": 150,
+    "image_url": "http://127.0.0.1:8000/static/steel_bottle.jpg"
+  }
+]
