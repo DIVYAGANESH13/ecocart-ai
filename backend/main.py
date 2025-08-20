@@ -11,11 +11,12 @@ app = FastAPI()
 
 # Mount static folder for images
 app.mount("/static", StaticFiles(directory="static"), name="static")
-
+origins = [
+    "https://divyaganesh13.github.io/ecocart-ai/"]
 # Enable CORS for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # React Vite dev server
+    allow_origins=origins,  # React Vite dev server
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
