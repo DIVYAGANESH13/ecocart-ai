@@ -9,18 +9,22 @@ import os
 # Create FastAPI instance
 app = FastAPI()
 
-# Mount static folder for images
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# Allow frontend domain
 origins = [
-    "https://divyaganesh13.github.io/ecocart-ai/"]
-# Enable CORS for frontend
+    "https://divyaganesh13.github.io",  # your frontend
+    "http://localhost:3000",            # for local dev
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # React Vite dev server
+    allow_origins=origins,  # or ["*"] if testing
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Mount static folder for images
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Load product data from JSON file
 with open(os.path.join("data", "product.json"), "r") as f:
